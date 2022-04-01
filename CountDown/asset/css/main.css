@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400;1,500&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    line-height: 1;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    -webkit-tap-highlight-color: transparent;
+}
+
+::selection{
+   background-color: #FFE6AB;
+   color:rgb(41, 43, 58);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+h2{
+    margin: 0;
+}
+
+.container-full{
+    background-image: url(https://images.unsplash.com/photo-1477346611705-65d1883cee1e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.heading{
+    margin-top: 100px;
+    text-transform: capitalize;
+    font-size: 4.5rem;
+    color: #fff;
+    font-weight:600;
+    font-style: italic;
+    text-align: center;
+}
+
+.countDown{
+    display: flex;
+    align-items: center;
+    justify-items: stretch;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.countDown .box{
+    flex: 1 1 25%;
+    text-align: center;
+    padding: 20px;
+    cursor: default;
+    min-width: 150px;
+}
+
+.countDown .box:hover{
+    background:ffffff10;
+    backdrop-filter:blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+}
+
+.big-text{
+    font-size: 5rem;
+    color: #fff;
+    margin: 0;
+    padding-bottom: 20px;
+}
+
+.countDown .box span{
+    font-size: 2rem;
+    color: #fff;
+}
+
+.today{
+    position: fixed;
+    bottom: 30px;
+    right: 50px;
+    font-style: italic;
+}
+
+.today span{
+    color: #fff;
+    font-size: 1.6rem;
+    padding: 0 2px;
+}
+
+
+/* reponsive */
+@media (max-width:680px) {
+    html{
+        font-size: 50%;
+    }
+    .heading{
+        font-size: 2.5rem;
+    }
+}
